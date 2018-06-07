@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iGroceryExamAssignment/Extensions/SwipeActionsExtenstions.swift"
+            timestampString = "549187251.765712"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "deleteAction(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UIContextualAction, __ObjC.UIView, (Swift.Bool) -&gt; ()) -&gt; () in iGroceryExamAssignment.GroceryListViewController.deleteAction(at: Foundation.IndexPath) -&gt; __ObjC.UIContextualAction"
+                  moduleName = "iGroceryExamAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muniryounos/Desktop/myFinalAssignment/iGroceryExamAssignment/iGroceryExamAssignment/Extensions/SwipeActionsExtenstions.swift"
+                  timestampString = "549148654.0947599"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__ObjC.UIAlertAction) -&gt; () in closure #1 (__ObjC.UIContextualAction, __ObjC.UIView, (Swift.Bool) -&gt; ()) -&gt; () in iGroceryExamAssignment.GroceryListViewController.deleteAction(at: Foundation.IndexPath) -&gt; __ObjC.UIContextualAction"
+                  moduleName = "iGroceryExamAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muniryounos/Desktop/myFinalAssignment/iGroceryExamAssignment/iGroceryExamAssignment/Extensions/SwipeActionsExtenstions.swift"
+                  timestampString = "549148654.09654"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

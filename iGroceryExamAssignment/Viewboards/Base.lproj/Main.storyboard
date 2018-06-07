@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Starter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="starterViewController" customModule="iGroceryExamAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MFD-RA-eMC">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="MFD-RA-eMC" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="37:647" id="e5J-6z-Ahp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="MFD-RA-eMC" secondAttribute="bottom" constant="-332" id="fNB-Yr-84g"/>
+                            <constraint firstItem="MFD-RA-eMC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-206" id="scL-KE-zid"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZQN-us-bVZ" kind="show" identifier="toMainPage" id="AW4-xl-Xwd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-201"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="eCf-Lv-U9T">
+            <objects>
+                <viewController id="ZQN-us-bVZ" customClass="MainPageViewController" customModule="iGroceryExamAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LwH-hy-YMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSC-s1-7bi">
+                                <rect key="frame" x="83" y="535" width="213" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Continue Shopping">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lqR-EH-NKS" kind="show" id="RX7-hT-7Am"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grocerylogo" translatesAutoresizingMaskIntoConstraints="NO" id="h6z-ur-w4R">
+                                <rect key="frame" x="112" y="193" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h6z-ur-w4R" secondAttribute="height" multiplier="1:1" id="L1B-P1-Wi3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iGrocery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zU-Wc-mIa">
+                                <rect key="frame" x="123.5" y="351" width="128" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Fresh and Clean Groceries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNR-V6-L4z">
+                                <rect key="frame" x="57" y="395" width="260.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8zU-Wc-mIa" firstAttribute="top" secondItem="h6z-ur-w4R" secondAttribute="bottom" constant="8" symbolic="YES" id="8cp-Mj-lHT"/>
+                            <constraint firstItem="JNR-V6-L4z" firstAttribute="centerX" secondItem="8zU-Wc-mIa" secondAttribute="centerX" id="GPH-pb-tc0"/>
+                            <constraint firstItem="h6z-ur-w4R" firstAttribute="centerX" secondItem="LwH-hy-YMs" secondAttribute="centerX" id="RSt-g6-ycc"/>
+                            <constraint firstItem="h6z-ur-w4R" firstAttribute="top" secondItem="Mn2-9X-Ffx" secondAttribute="top" constant="173" id="VlB-02-Tlq"/>
+                            <constraint firstItem="h6z-ur-w4R" firstAttribute="centerX" secondItem="8zU-Wc-mIa" secondAttribute="centerX" id="bgk-o3-UrE"/>
+                            <constraint firstItem="h6z-ur-w4R" firstAttribute="leading" secondItem="Mn2-9X-Ffx" secondAttribute="leading" constant="112" id="cIW-bO-Dpd"/>
+                            <constraint firstItem="JNR-V6-L4z" firstAttribute="top" secondItem="8zU-Wc-mIa" secondAttribute="top" constant="44" id="jJl-Za-niI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mn2-9X-Ffx"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyBtn" destination="cSC-s1-7bi" id="q4e-s3-wdr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54i-cV-wnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="179"/>
+        </scene>
+        <!--iGrocery Store-->
+        <scene sceneID="SBA-WA-urK">
+            <objects>
+                <viewController id="Tkn-hK-3jg" customClass="GroceryListViewController" customModule="iGroceryExamAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yqw-Qr-YYI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ziY-iA-K3m"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iGrocery Store" id="c2k-XQ-dh6">
+                        <leftBarButtonItems>
+                            <barButtonItem id="fEV-tM-Tp2"/>
+                            <barButtonItem image="backarr-1" id="LVs-hG-b7I">
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="goBack:" destination="Tkn-hK-3jg" id="Kdb-Ew-4O3"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3dZ-lj-Ga5">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="k2j-1Y-iO4" kind="presentation" id="mpk-T4-F2S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpr-P3-htK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3295" y="287"/>
+        </scene>
+        <!--Add Grocery to List-->
+        <scene sceneID="bJO-uM-PNY">
+            <objects>
+                <viewController id="Mx4-gI-2s0" customClass="NewGroceryViewController" customModule="iGroceryExamAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMC-Ep-Tkl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hey! New Grocery to Add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHv-vP-qHn">
+                                <rect key="frame" x="16" y="64" width="343" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="783-M6-nMC">
+                                <rect key="frame" x="16" y="64" width="343" height="587"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uH0-4H-2Qp" firstAttribute="trailing" secondItem="783-M6-nMC" secondAttribute="trailing" constant="16" id="8Bq-I2-iY2"/>
+                            <constraint firstItem="783-M6-nMC" firstAttribute="top" secondItem="uH0-4H-2Qp" secondAttribute="top" id="CQx-aR-TDf"/>
+                            <constraint firstItem="783-M6-nMC" firstAttribute="leading" secondItem="uH0-4H-2Qp" secondAttribute="leading" constant="16" id="Pev-Yg-ZXv"/>
+                            <constraint firstItem="uH0-4H-2Qp" firstAttribute="trailing" secondItem="783-M6-nMC" secondAttribute="trailing" constant="16" id="Vk0-0n-tUA"/>
+                            <constraint firstItem="783-M6-nMC" firstAttribute="leading" secondItem="uH0-4H-2Qp" secondAttribute="leading" constant="16" id="ekL-Po-Tcp"/>
+                            <constraint firstItem="uH0-4H-2Qp" firstAttribute="bottom" secondItem="783-M6-nMC" secondAttribute="bottom" constant="16" id="jb8-yr-sUk"/>
+                            <constraint firstItem="783-M6-nMC" firstAttribute="top" secondItem="uH0-4H-2Qp" secondAttribute="top" id="msg-8z-A1G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uH0-4H-2Qp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Grocery to List" id="NLv-2G-fsA">
+                        <barButtonItem key="leftBarButtonItem" image="backarr-1" id="t29-9e-dcj">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="handleTrashBtn:" destination="Mx4-gI-2s0" id="Akn-nc-kp4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rZf-bs-3TJ">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="handleFBdata:" destination="Mx4-gI-2s0" id="Cyt-mY-F6v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="groceryTextView" destination="783-M6-nMC" id="LNs-O5-wTw"/>
+                        <outlet property="placeHolderText" destination="HHv-vP-qHn" id="RW5-ZC-4Hx"/>
+                        <outlet property="trashBtn" destination="t29-9e-dcj" id="PqA-LQ-8wk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPo-Xs-ap4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4902" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PrS-jU-CCM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lqR-EH-NKS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" systemItem="search" id="36M-TW-BVW">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vyj-Ii-9xV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tkn-hK-3jg" kind="relationship" relationship="rootViewController" id="4ia-F7-Q2s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiG-HA-aky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="-108"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7C7-Ih-75L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k2j-1Y-iO4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aCc-Zo-aC7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mx4-gI-2s0" kind="relationship" relationship="rootViewController" id="aS5-PD-Xtr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEZ-Yq-7dK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4050" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backarr-1" width="32" height="32"/>
+        <image name="grocerylogo" width="450" height="450"/>
+    </resources>
+</document>
